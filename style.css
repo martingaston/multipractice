@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Teko');
+
+body {
+  background-color: #f3e9dc;
+  font-family: 'Teko', sans-serif;
+  margin: 0;
+}
+
+button {
+  background-color: red;
+  box-shadow: 0 5px 0 darkred;
+  color: white;
+  padding: 1em 1.5em;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 5px;
+}
+
+.xl {
+  height: 10vh;
+  width: 25vw;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+button:hover {
+  background-color: #ce0606;
+  cursor: pointer;
+}
+
+button:active {
+  box-shadow: none;
+  top: 5px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 60%;
+  height: 4rem;
+  border: 2px solid #37371f;
+  border-radius: 5px;
+  margin: 8px;
+  padding: 8px;
+  outline: none;
+  background-color: #f3e9dc;
+  transition: .25s;
+  font-family: 'Teko', sans-serif;
+  font-size: 2rem;
+}
+
+input:focus {
+  box-shadow: 0 0 4px 0 #a2a7a5;
+  background-color: whitesmoke;
+}
+
+h1, h2 {
+  color: #37371f;
+  font-size: 2rem;
+}
+
+article {
+  margin: auto;
+  height: 100vh;
+}
+
+footer {
+  margin: 60px 0;
+  border: 0;
+  padding: 0;
+  background-color: black;
+  color: whitesmoke;
+  line-height: 150%;
+  height: 25vh;
+  width: 100%;
+  vertical-align: baseline;
+}
