@@ -108,15 +108,21 @@ h2 {
 }
 
 footer {
+    font-family: sans-serif;
     margin: 0;
     border: 0;
-    padding: 0;
+    padding: 1rem;
     background-color: black;
     color: whitesmoke;
     line-height: 150%;
-    height: 25vh;
     width: 100%;
     vertical-align: baseline;
+}
+
+footer a {
+    color: whitesmoke;
+    text-decoration: none;
+    border-bottom: 2px solid whitesmoke;
 }
 
 #board {
@@ -154,4 +160,33 @@ footer {
     background-color: #f6f6f6;
     border: 1px solid #dedede;
     transition: background-color 0.15s ease-out;
+}
+
+@media screen and (max-width: 550px) {
+    #board {
+        width: 100%;
+    }
+    #answer-form {
+        width: 90%;
+    }
+    input {
+        width: 70%;
+        box-sizing: border-box;
+        font-family: "Teko", sans-serif;
+        font-size: 1.5rem;
+        padding-left: 0.5rem;
+    }
+    button {
+        width: 30%;
+        font-size: 1rem;
+    }
+}
+
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
