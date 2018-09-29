@@ -1,28 +1,146 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <link rel="stylesheet" type "text/css" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" type="text/css" href="normalize.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="test/css" href="animate.css">
 </head>
 
 <body>
   <article>
-    <h1>Times Table Tester</h1>
-    <h2>what is
-      <span id="sum">10x10?</span>
-    </h2>
-    <input type="text" id="answer" placeholder="Enter your answer...">
-    <button id="submit">Am I right?</button>
+    <div id="intro">
+      <h1>Times Table Tester</h1>
+      <button class="xl" id="start">Start</button>
+    </div>
+    <div id="main">
+      <h2><span id="sum">10x10</span>
+      </h2>
+      <form autocomplete="off" id="answer-form">
+        <input type="number" min="1" max="100" id="answer" placeholder="Enter your answer..." required>
+        <button type="submit" id="submit" name="submit" value="Submit">Am I right?</button>
+      </form>
+      <div id="board">
+        <div id="answer-grid">
+          <span class="sum box1">1</span>
+          <span class="sum box2">2</span>
+          <span class="sum box3">3</span>
+          <span class="sum box4">4</span>
+          <span class="sum box5">5</span>
+          <span class="sum box6">6</span>
+          <span class="sum box7">7</span>
+          <span class="sum box8">8</span>
+          <span class="sum box9">9</span>
+          <span class="sum box10">10</span>
+          <span class="sum box11">2</span>
+          <span class="sum box12">4</span>
+          <span class="sum box13">6</span>
+          <span class="sum box14">8</span>
+          <span class="sum box15">10</span>
+          <span class="sum box16">12</span>
+          <span class="sum box17">14</span>
+          <span class="sum box18">16</span>
+          <span class="sum box19">18</span>
+          <span class="sum box20">20</span>
+          <span class="sum box21">3</span>
+          <span class="sum box22">6</span>
+          <span class="sum box23">9</span>
+          <span class="sum box24">12</span>
+          <span class="sum box25">15</span>
+          <span class="sum box26">18</span>
+          <span class="sum box27">21</span>
+          <span class="sum box28">24</span>
+          <span class="sum box29">27</span>
+          <span class="sum box30">30</span>
+          <span class="sum box31">4</span>
+          <span class="sum box32">8</span>
+          <span class="sum box33">12</span>
+          <span class="sum box34">16</span>
+          <span class="sum box35">20</span>
+          <span class="sum box36">24</span>
+          <span class="sum box37">28</span>
+          <span class="sum box38">32</span>
+          <span class="sum box39">36</span>
+          <span class="sum box40">40</span>
+          <span class="sum box41">5</span>
+          <span class="sum box42">10</span>
+          <span class="sum box43">15</span>
+          <span class="sum box44">20</span>
+          <span class="sum box45">25</span>
+          <span class="sum box46">30</span>
+          <span class="sum box47">35</span>
+          <span class="sum box48">40</span>
+          <span class="sum box49">45</span>
+          <span class="sum box50">50</span>
+          <span class="sum box51">6</span>
+          <span class="sum box52">12</span>
+          <span class="sum box53">18</span>
+          <span class="sum box54">24</span>
+          <span class="sum box55">30</span>
+          <span class="sum box56">36</span>
+          <span class="sum box57">42</span>
+          <span class="sum box58">48</span>
+          <span class="sum box59">54</span>
+          <span class="sum box60">60</span>
+          <span class="sum box61">7</span>
+          <span class="sum box62">14</span>
+          <span class="sum box63">21</span>
+          <span class="sum box64">28</span>
+          <span class="sum box65">35</span>
+          <span class="sum box66">42</span>
+          <span class="sum box67">49</span>
+          <span class="sum box68">56</span>
+          <span class="sum box69">63</span>
+          <span class="sum box70">70</span>
+          <span class="sum box71">8</span>
+          <span class="sum box72">16</span>
+          <span class="sum box73">24</span>
+          <span class="sum box74">32</span>
+          <span class="sum box75">40</span>
+          <span class="sum box76">48</span>
+          <span class="sum box77">56</span>
+          <span class="sum box78">64</span>
+          <span class="sum box79">72</span>
+          <span class="sum box80">80</span>
+          <span class="sum box81">9</span>
+          <span class="sum box82">18</span>
+          <span class="sum box83">27</span>
+          <span class="sum box84">36</span>
+          <span class="sum box85">45</span>
+          <span class="sum box86">54</span>
+          <span class="sum box87">63</span>
+          <span class="sum box88">72</span>
+          <span class="sum box89">81</span>
+          <span class="sum box90">90</span>
+          <span class="sum box91">10</span>
+          <span class="sum box92">20</span>
+          <span class="sum box93">30</span>
+          <span class="sum box94">40</span>
+          <span class="sum box95">50</span>
+          <span class="sum box96">60</span>
+          <span class="sum box97">70</span>
+          <span class="sum box98">80</span>
+          <span class="sum box99">90</span>
+          <span class="sum box100">100</span>
+        </div>
+      </div>
+    </div>
   </article>
-  <button class="xl" id="submit">Start</button>
-  <script src="script.js"></script>
+  <script src="logic.js"></script>
+  <script src="dom.js"></script>
   <footer>
-    <h2>A project to unleash the inner 🤓 by Martin Gaston.</h2>
-    <p>I've sort of got to confess that my knowledge of the multiplication tables aren't ideal - which isn't something that
-      I'm proud of whenever it comes to splitting a bill or managing a budget. So I wanted to make something I could use
-      to refine those skills quickly and easily.</p>
+    <h3>A project to unleash the inner 🤓</h3>
+    <p>Confession: my knowledge of the multiplication tables aren't ideal - which isn't something I'm proud of
+      whenever it comes to splitting a bill or managing a budget. So I wanted to make something I could
+      use to refine those skills quickly and easily, and without having to be lectured to by a talking animal character
+      like in most other multiplication apps.</p>
     <p>If you have any comments or suggestions, feel free to reach out to me on
       <a href="https://www.twitter.com/squidmania">Twitter</a> or
-      <a href="https://www.github.com/martingaston">Github</a> ♥️</p>
+      <a href="https://www.github.com/martingaston">Github</a> 💖</p>
   </footer>
 </body>
 

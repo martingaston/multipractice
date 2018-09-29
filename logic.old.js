@@ -61,3 +61,5 @@ answer.addEventListener('keypress', function (event) {
     chkAnswer();
   }
 });
+
+module.exports = shuffle();

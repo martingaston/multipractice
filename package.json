@@ -1,0 +1,27 @@
+{
+  "name": "multipractice",
+  "version": "1.0.0",
+  "description": "",
+  "main": ".eslintrc.js",
+  "scripts": {
+    "test": "node ./logic.test.js | tap-spec",
+    "coverage": "istanbul cover ./logic.test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/martingaston/multipractice.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/martingaston/multipractice/issues"
+  },
+  "homepage": "https://github.com/martingaston/multipractice#readme",
+  "devDependencies": {
+    "istanbul": "^0.4.5",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  },
+  "dependencies": {}
+}
