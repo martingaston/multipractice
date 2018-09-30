@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css?family=Teko");
+@import "normalize";
+
+$background: #47bfe9;
+$accent: #e9a347;
+$accent-border: #e48d1b;
+$correct: #09bc8a;
+$incorrect: #d8315b;
+$hover: #a347e9;
+$font: "Teko", sans-serif;
+$black: #1c1c1c;
+$white-border: #dedede;
+$white: #f6f6f6;
+
+html {
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $background;
+  font-family: $font;
+  margin: 0;
+  font-size: 16px;
+}
+
+#progress {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  flex-direction: row;
+  background-color: inherit;
+  width: 100%;
+  height: 1vh;
+  margin: 0;
+}
+
+.progressing {
+  height: 100%;
+  background-color: $accent;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 99vh;
+  margin: 0;
+}
+
+button {
+  box-sizing: border-box;
+  width: 100%;
+  height: 4rem;
+  border: 2px solid $accent-border;
+  margin: 0px;
+  margin-left: 10px;
+  outline: none;
+  background-color: $accent;
+  transition: 0.25s;
+  font-family: $font;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.xl {
+  height: 10vh;
+  width: 20vw;
+  font-size: 2rem;
+  font-weight: 700;
+  margin: 0;
+}
+
+button:hover {
+  color: $white;
+  border: 2px solid $hover;
+  background-color: $hover;
+  cursor: pointer;
+}
+
+button:active {
+  border: 2px solid $hover;
+  background-color: $hover;
+  box-shadow: none;
+  top: 5px;
+}
+
+input {
+  box-sizing: border-box;
+  width: 100%;
+  height: 4rem;
+  border: 2px solid $white-border;
+  margin: 0px;
+  outline: none;
+  background-color: $white;
+  transition: 0.25s;
+  font-family: $font;
+  font-size: 2rem;
+  padding-left: 1rem;
+}
+
+input:focus {
+  box-shadow: 0 0 4px 0 #a2a7a5;
+  background-color: $white;
+}
+
+h1 {
+  color: $black;
+  font-size: 6rem;
+  margin: 0;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+#intro {
+  justify-content: center;
+  align-items: center;
+  visibility: visible;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+footer {
+  font-family: sans-serif;
+  margin: 0;
+  border: 0;
+  padding: 1rem;
+  background-color: $black;
+  color: $white;
+  line-height: 150%;
+  width: 100%;
+  vertical-align: baseline;
+}
+
+footer a {
+  color: $white;
+  text-decoration: none;
+  border-bottom: 2px solid $white;
+}
+
+#board {
+  width: 500px;
+  height: 500px;
+  margin: 10px;
+}
+
+#answer-grid {
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(10, 10fr);
+  grid-template-rows: repeat(10, 10fr);
+}
+
+#answer-form {
+  width: 500px;
+  align-items: center;
+  justify-content: space-between;
+  display: flex;
+  margin: 0px;
+}
+
+#results {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 2rem 0;
+}
+
+#results .list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#results .list h2 {
+  margin: 0.5rem;
+}
+
+.sum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  font-size: 1.25rem;
+  background-color: $white;
+  border: 1px solid $white-border;
+  transition: background-color 0.15s ease-out;
+}
+
+.correct {
+  background-color: $correct;
+}
+
+.incorrect {
+  background-color: $incorrect;
+}
+
+@media screen and (max-width: 550px) {
+  #board {
+    width: 100%;
+  }
+  #answer-form {
+    width: 90%;
+  }
+  input {
+    width: 70%;
+    box-sizing: border-box;
+    font-family: $font;
+    font-size: 1.5rem;
+    padding-left: 0.5rem;
+  }
+  button {
+    width: 30%;
+    font-size: 1rem;
+  }
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
